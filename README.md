@@ -56,7 +56,8 @@ $ git rm --cached localFileName
 $ git reset --hard commitSHA###... # changes staging index and 
                                    # local folder to match online 
                                    # repository commit
-
+#after reset from local, if you want to reset in repo like local
+$ git push origin [branchName] -f
 # removing 3 commits from online github repo
 $ git push -f origin HEAD^^^:branchNameToUndoLast3Pushs
 ```
